@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Return Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 600px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, textarea {
+            margin-bottom: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            font-size: 1rem;
+        }
+        button {
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005A9E;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laptop Return Form</h1>
+    <form action="/submit" method="POST">
+        <label for="san">SAN:</label>
+        <input type="text" id="san" name="san" required>
+        
+        <label for="returned_by">Returned By:</label>
+        <input type="text" id="returned_by" name="returned_by" required>
+        
+        <label for="returned_to">Returned To:</label>
+        <input type="text" id="returned_to" name="returned_to" required>
+        
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
